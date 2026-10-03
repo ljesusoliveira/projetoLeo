@@ -1,0 +1,1 @@
+highpass=f=60,acompressor=threshold=-22dB:ratio=2.2:attack=15:release=250:makeup=1.5,volume=3.8dB,alimiter=limit=0.84:level=0:attack=2:release=60,afade=t=out:st=168.75:d=0.29,aresample=48000

@@ -1,0 +1,9 @@
+# vídeos de trabalho e arquivos gerados (a entrega final fica em entregas/)
+shorts/**/*.mp4
+shorts/**/*.mov
+shorts/**/filter.txt
+shorts/**/x264pass*
+shorts/**/*.png
+shorts/**/*.jpg
+shorts/fonts/
+__pycache__/
