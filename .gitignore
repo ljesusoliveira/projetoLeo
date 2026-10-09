@@ -7,3 +7,7 @@ shorts/**/*.png
 shorts/**/*.jpg
 shorts/fonts/
 __pycache__/
+shorts/**/*.npy
+shorts/**/*.log
+shorts/**/*.rgb
+shorts/**/*.f32
