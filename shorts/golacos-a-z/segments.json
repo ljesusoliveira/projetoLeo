@@ -1,0 +1,226 @@
+{
+ "fonte": "original.mp4 (release video-gols)",
+ "duracao": 590.37,
+ "video": "1920x1080 60fps H.264",
+ "audio": "AAC 44.1kHz estéreo quase mono, -19.6 LUFS, pico -2.8 dBTP",
+ "cartela_titulo": {
+  "texto": "1 GOLAÇO DE A a Z",
+  "inicio": 24.5,
+  "fim": 29.5
+ },
+ "tela_preta": {
+  "inicio": 581.67,
+  "fim": 590.37
+ },
+ "corte_entre_gols": "1 quadro preto",
+ "gols": [
+  {
+   "letra": "A",
+   "jogador": "Arrascaeta",
+   "jogo": "Ceará 0-3 Flamengo",
+   "ano": 2019,
+   "inicio": 0,
+   "fim": 32.35
+  },
+  {
+   "letra": "B",
+   "jogador": "Bruno Henrique",
+   "jogo": "Botafogo 1-2 Flamengo",
+   "ano": 2023,
+   "inicio": 32.35,
+   "fim": 55.95
+  },
+  {
+   "letra": "C",
+   "jogador": "Calleri",
+   "jogo": "Água Santa 1-2 São Paulo",
+   "ano": 2022,
+   "inicio": 55.95,
+   "fim": 72.55
+  },
+  {
+   "letra": "D",
+   "jogador": "Depay",
+   "jogo": "Corinthians 3-1 São Paulo",
+   "ano": 2025,
+   "inicio": 72.55,
+   "fim": 99.68
+  },
+  {
+   "letra": "E",
+   "jogador": "Everton Ribeiro",
+   "jogo": "Cruzeiro 0-2 Flamengo",
+   "ano": 2018,
+   "inicio": 99.68,
+   "fim": 126.9
+  },
+  {
+   "letra": "F",
+   "jogador": "Flaco López",
+   "jogo": "Palmeiras 4-1 Vasco da Gama",
+   "ano": 2026,
+   "inicio": 126.9,
+   "fim": 152.55
+  },
+  {
+   "letra": "G",
+   "jogador": "Germán Cano",
+   "jogo": "Fluminense 2-0 Vasco da Gama",
+   "ano": 2023,
+   "inicio": 152.55,
+   "fim": 181.02
+  },
+  {
+   "letra": "H",
+   "jogador": "Hulk",
+   "jogo": "Atlético Mineiro 2-0 Tombense",
+   "ano": 2025,
+   "inicio": 181.02,
+   "fim": 203.12
+  },
+  {
+   "letra": "I",
+   "jogador": "Igor Coronado",
+   "jogo": "Corinthians 4-2 Internacional",
+   "ano": 2025,
+   "inicio": 203.12,
+   "fim": 225.75
+  },
+  {
+   "letra": "J",
+   "jogador": "Jhon Arias",
+   "jogo": "Bahia 1-2 Palmeiras",
+   "ano": 2026,
+   "inicio": 225.75,
+   "fim": 252.93
+  },
+  {
+   "letra": "K",
+   "jogador": "Kaio Jorge",
+   "jogo": "Cruzeiro 2-0 Vila Nova",
+   "ano": 2025,
+   "inicio": 252.93,
+   "fim": 273.0
+  },
+  {
+   "letra": "L",
+   "jogador": "Luciano",
+   "jogo": "Fortaleza 2-3 São Paulo",
+   "ano": 2020,
+   "inicio": 273.0,
+   "fim": 291.75
+  },
+  {
+   "letra": "M",
+   "jogador": "Matheus Pereira",
+   "jogo": "Cruzeiro 1-2 Coritiba",
+   "ano": 2026,
+   "inicio": 291.75,
+   "fim": 318.8
+  },
+  {
+   "letra": "N",
+   "jogador": "Neymar Jr",
+   "jogo": "Santos 10-0 Naviraiense",
+   "ano": 2010,
+   "inicio": 318.8,
+   "fim": 343.18
+  },
+  {
+   "letra": "O",
+   "jogador": "Oscar",
+   "jogo": "Internacional 4-2 América-MG",
+   "ano": 2011,
+   "inicio": 343.18,
+   "fim": 360.53
+  },
+  {
+   "letra": "P",
+   "jogador": "Pedro",
+   "jogo": "Palmeiras 4-3 Flamengo",
+   "ano": 2023,
+   "inicio": 360.53,
+   "fim": 383.9
+  },
+  {
+   "letra": "Q",
+   "jogador": "Quirino",
+   "jogo": "Ituano 3-0 ABC",
+   "ano": 2023,
+   "inicio": 383.9,
+   "fim": 405.83
+  },
+  {
+   "letra": "R",
+   "jogador": "Rony",
+   "jogo": "Fluminense 1-1 Palmeiras",
+   "ano": 2022,
+   "inicio": 405.83,
+   "fim": 426.53
+  },
+  {
+   "letra": "S",
+   "jogador": "Soteldo",
+   "jogo": "Santos 2-1 Botafogo",
+   "ano": 2021,
+   "inicio": 426.53,
+   "fim": 443.8
+  },
+  {
+   "letra": "T",
+   "jogador": "Tiquinho Soares",
+   "jogo": "Botafogo 1-1 Goiás",
+   "ano": 2023,
+   "inicio": 443.8,
+   "fim": 462.57
+  },
+  {
+   "letra": "U",
+   "jogador": "Uillian Correia",
+   "jogo": "Palmeiras 4-2 Vitória",
+   "ano": 2017,
+   "inicio": 462.57,
+   "fim": 479.9
+  },
+  {
+   "letra": "V",
+   "jogador": "Vitor Roque",
+   "jogo": "Mirassol 2-1 Palmeiras",
+   "ano": 2025,
+   "inicio": 479.9,
+   "fim": 498.48
+  },
+  {
+   "letra": "W",
+   "jogador": "William José",
+   "jogo": "Bahia 4-0 Grêmio",
+   "ano": 2025,
+   "inicio": 498.48,
+   "fim": 517.48
+  },
+  {
+   "letra": "X",
+   "jogador": "Xandão",
+   "jogo": "Ferroviária 2-1 Corinthians",
+   "ano": 2021,
+   "inicio": 517.48,
+   "fim": 537.27
+  },
+  {
+   "letra": "Y",
+   "jogador": "Yuri Alberto",
+   "jogo": "Fluminense 3-3 Corinthians",
+   "ano": 2023,
+   "inicio": 537.27,
+   "fim": 558.02
+  },
+  {
+   "letra": "Z",
+   "jogador": "Zé Rafael",
+   "jogo": "Palmeiras 2-2 Sport Recife",
+   "ano": 2020,
+   "inicio": 558.02,
+   "fim": 581.67
+  }
+ ]
+}
