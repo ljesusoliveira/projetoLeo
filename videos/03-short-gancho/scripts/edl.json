@@ -1,0 +1,39 @@
+{
+ "fps": 30,
+ "note": "Roteiro do Short. Tempos em segundos do vídeo longo (original.mp4). cx = centro horizontal do recorte (0 a 1) em cada instante; y0/y1 = faixa vertical usada (fica acima da faixa vermelha e do selo do canal).",
+ "pieces": [
+  {"id": "gancho-a", "src": [284.0, 285.45], "y0": 0, "y1": 880, "cx": [[284.0, 0.56], [285.45, 0.70]]},
+  {"id": "gancho-freeze", "freeze": 0.7, "of": "gancho-a", "zoom": [1.0, 1.14], "flash": true, "sfx": "hit"},
+  {"id": "gancho-b", "src": [285.45, 287.3], "y0": 0, "y1": 880, "cx": [[285.45, 0.70]]},
+
+  {"id": "hulk", "src": [31.2, 34.2], "y0": 0, "y1": 960, "cx": [[31.2, 0.50], [34.2, 0.55]],
+   "name": "HULK • ATLÉTICO-MG", "tag": ["COBRANÇA DE FALTA", "🎯"]},
+  {"id": "hulk-com", "src": [34.3, 35.5], "y0": 0, "y1": 960, "cx": [[34.3, 0.60]], "cont": "hulk"},
+
+  {"id": "arrascaeta", "src": [3.4, 6.4], "y0": 0, "y1": 960, "cx": [[3.4, 0.50], [6.4, 0.55]],
+   "name": "ARRASCAETA • FLAMENGO", "tag": ["DE BICICLETA", "🔥"]},
+  {"id": "arrascaeta-com", "src": [7.7, 8.7], "y0": 0, "y1": 960, "cx": [[7.7, 0.58]], "cont": "arrascaeta"},
+
+  {"id": "yuri", "src": [316.8, 319.7], "y0": 0, "y1": 960, "cx": [[316.8, 0.34], [318.4, 0.40], [319.7, 0.50]],
+   "name": "YURI ALBERTO • CORINTHIANS", "tag": ["QUE GOLAÇO", "😱"]},
+  {"id": "yuri-com", "src": [314.4, 315.4], "y0": 0, "y1": 960, "cx": [[314.4, 0.47]], "cont": "yuri"},
+
+  {"id": "chutaco", "src": [248.0, 250.6], "y0": 0, "y1": 960, "cx": [[248.0, 0.46], [250.6, 0.42]],
+   "tag": ["QUE CHUTE", "🚀"]},
+  {"id": "chutaco-com", "src": [245.4, 246.6], "y0": 0, "y1": 960, "cx": [[245.4, 0.55]], "cont": "chutaco"},
+
+  {"id": "rebobina", "rewind": 0.8, "of": "chutaco-com", "sfx": "rewind"},
+
+  {"id": "bernardo", "src": [373.3, 378.4], "y0": 105, "y1": 960, "cx": [[373.3, 0.48], [374.6, 0.50], [375.0, 0.45], [375.45, 0.33], [376.0, 0.29], [376.45, 0.35], [377.0, 0.40], [377.4, 0.36], [377.85, 0.46], [378.15, 0.63], [378.4, 0.63]],
+   "name": "BERNARDO • VASCO", "tag": ["QUE DRIBLE", "😳"]},
+
+  {"id": "sergio", "src": [362.2, 365.3], "y0": 105, "y1": 960, "cx": [[362.2, 0.45], [363.4, 0.47], [365.3, 0.40]],
+   "name": "SÉRGIO ALVES • BAHIA", "tag": ["BICICLETA CLÁSSICA", "🔥"]},
+
+  {"id": "guilherme", "src": [380.0, 383.75], "y0": 105, "y1": 880, "cx": [[380.0, 0.64], [382.6, 0.62], [382.7, 0.62], [383.75, 0.66]],
+   "name": "GUILHERME • ATLÉTICO-MG", "tag": ["OUTRA GERAÇÃO", "📼"]},
+  {"id": "suspense", "freeze": 1.9, "of": "guilherme", "zoom": [1.0, 1.22], "desat": true, "sfx": "riser"},
+
+  {"id": "final", "freeze": 2.7, "of": "guilherme", "zoom": [1.22, 1.22], "endcard": true, "sfx": "boom"}
+ ]
+}

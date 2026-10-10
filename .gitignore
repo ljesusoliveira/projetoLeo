@@ -12,3 +12,7 @@ videos/*/scripts/**/*.rgb
 videos/*/scripts/**/*.f32
 videos/*/fonts/
 __pycache__/
+videos/*/scripts/**/*.wav
+videos/*/scripts/**/yavg.txt
+videos/*/scripts/**/cuts.txt
+videos/*/scripts/**/audio_filter.txt
