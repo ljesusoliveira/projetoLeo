@@ -1,13 +1,14 @@
-# vídeos de trabalho e arquivos gerados (a entrega final fica em entregas/)
-shorts/**/*.mp4
-shorts/**/*.mov
-shorts/**/filter.txt
-shorts/**/x264pass*
-shorts/**/*.png
-shorts/**/*.jpg
-shorts/fonts/
+# arquivos de trabalho gerados pelos scripts
+# (o vídeo final de cada projeto fica direto na pasta do vídeo, fora de scripts/)
+videos/*/scripts/**/*.mp4
+videos/*/scripts/**/*.mov
+videos/*/scripts/**/filter.txt
+videos/*/scripts/**/x264pass*
+videos/*/scripts/**/*.png
+videos/*/scripts/**/*.jpg
+videos/*/scripts/**/*.npy
+videos/*/scripts/**/*.log
+videos/*/scripts/**/*.rgb
+videos/*/scripts/**/*.f32
+videos/*/fonts/
 __pycache__/
-shorts/**/*.npy
-shorts/**/*.log
-shorts/**/*.rgb
-shorts/**/*.f32
