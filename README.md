@@ -7,8 +7,19 @@ Edição de Shorts (9:16) para o canal **Bastidores do Futebol** (YouTube e rede
 | Arquivo | O que é |
 | --- | --- |
 | `entregas/Short_Momentos_Bizarros_9x16.mp4` | Short "Momentos mais bizarros do futebol brasileiro": 1080×1920, 30 fps, 2:49, H.264 + AAC, áudio em −14 LUFS |
+| `entregas/golaco-de-a-a-z/` | "Golaço de A a Z" sem as legendas dos jogadores, em 5 partes (o GitHub não aceita arquivo acima de 100 MB): 1920×1080, 60 fps, H.264 5,6 Mbps + AAC |
 
 Para baixar pelo navegador, abra o arquivo no GitHub e clique em **Download raw file**.
+
+As partes do "Golaço de A a Z" são cortadas entre um gol e outro. Para ter o vídeo inteiro (9:50), coloque as 5 em sequência no CapCut:
+
+| Parte | Gols | Duração |
+| --- | --- | --- |
+| `Golaco_de_A_a_Z_parte1_A-E.mp4` | A a E | 2:07 |
+| `Golaco_de_A_a_Z_parte2_F-J.mp4` | F a J | 2:06 |
+| `Golaco_de_A_a_Z_parte3_K-O.mp4` | K a O | 1:48 |
+| `Golaco_de_A_a_Z_parte4_P-T.mp4` | P a T | 1:42 |
+| `Golaco_de_A_a_Z_parte5_U-Z.mp4` | U a Z (com os 8 s de tela preta do final original) | 2:08 |
 
 ## Como o Short foi montado
 
