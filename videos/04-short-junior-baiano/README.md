@@ -18,14 +18,6 @@ Short feito a partir do vídeo longo das faltas do Júnior Baiano (release `juni
 | 0:46–0:48 | Suspense: "E ESSA NEM É A PIOR... 😳" e "AS PIORES ESTÃO NO VÍDEO COMPLETO 👇" |
 | 0:48–0:51 | Encerramento: "VÍDEO COMPLETO LÁ NO CANAL 🔥", título do vídeo longo, "INSCREVA-SE" e "TOQUE NO VÍDEO RELACIONADO" |
 
-## Trilha sonora
-
-A música de fundo do vídeo longo foi retirada. No lugar entrou uma trilha original no estilo phonk (cowbell, 808 e bateria, 130 BPM), criada do zero pelo `scripts/music.py`. Como foi gerada aqui, ela não usa música de ninguém e não tem direitos autorais de terceiros.
-
-- A trilha acompanha a edição: começa abafada na frase do gancho, "explode" no "SERÁ?", para nos congelamentos para o impacto ficar sozinho, fecha no suspense e termina com um impacto no encerramento.
-- A voz do Júnior Baiano no gancho foi separada da música antiga com um modelo de separação de voz (`scripts/separate.py`).
-- Nos lances o vídeo longo só tinha a música de fundo, então ali ficam a trilha nova e os efeitos (impacto em cada contato, apito no cartão vermelho).
-
 ## Ao publicar no YouTube
 
 - No YouTube Studio, em **Vídeo relacionado**, escolha o vídeo longo. Assim o link clicável aparece no Short, que é para onde o texto final aponta.
