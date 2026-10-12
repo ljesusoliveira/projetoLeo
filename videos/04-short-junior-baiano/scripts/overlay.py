@@ -226,7 +226,9 @@ for q in PIECES:
         spr = sticker(p['text'], anton(78), icon=p['emoji'], h=128, angle=2.5,
                       fg=WHITE if red else BLACK, bg=RED if red else YEL,
                       border=WHITE if red else BLACK, bw=6 if red else 5)
-        POPS.append((spr, out_frame(q['id'], p['from']), min(out_frame(q['id'], p['to']), q['end'])))
+        # o cartão fica no alto da imagem: a etiqueta dele vai para baixo para não cobrir
+        cy = BAND_BOT - 150 if red else BAND_Y + 230
+        POPS.append((spr, out_frame(q['id'], p['from']), min(out_frame(q['id'], p['to']), q['end']), cy))
 
 # ------------------------------------------------------------------ animação
 
@@ -366,8 +368,8 @@ def render(n):
             show(im, TAGS[g['id']], n, a, g['tag_end'] - 2, W / 2, BAND_BOT - 205)
             show(im, NUMS[g['id']], n, a + 5, g['tag_end'] - 2, W / 2, BAND_BOT - 95)
     # reações em cima do lance
-    for spr, a, b in POPS:
-        show(im, spr, n, a, b, W / 2, BAND_Y + 230, pulse=0.035, hz=2.0)
+    for spr, a, b, cy in POPS:
+        show(im, spr, n, a, b, W / 2, cy, pulse=0.035, hz=2.0)
     # suspense
     show(im, WORST, n, TEASE_A + 2, END_A, W / 2, BAND_Y + BAND_H / 2 + 40, pulse=0.04, hz=2.2)
     # encerramento
