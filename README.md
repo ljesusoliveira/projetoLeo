@@ -9,6 +9,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/01-short-momentos-bizarros`](videos/01-short-momentos-bizarros) | Short "Momentos mais bizarros do futebol brasileiro" | Vertical 9:16, 2:49 |
 | [`videos/02-golaco-de-a-a-z`](videos/02-golaco-de-a-a-z) | "Golaço de A a Z" sem as legendas dos jogadores | Horizontal 16:9, 9:50, em 5 partes |
 | [`videos/03-short-gancho`](videos/03-short-gancho) | Short-gancho para o vídeo longo "As maiores pinturas do futebol brasileiro" | Vertical 9:16, 0:37 |
+| [`videos/04-short-junior-baiano`](videos/04-short-junior-baiano) | Short-gancho para o vídeo longo das faltas mais duras de Júnior Baiano | Vertical 9:16, 0:51 |
 
 ## Como baixar um vídeo
 
