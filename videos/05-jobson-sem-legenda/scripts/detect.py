@@ -14,22 +14,30 @@ BY0, BY1 = 901, 977                 # faixa da caixa (linhas)
 K5 = np.ones((5, 5), np.uint8)
 
 
+TR0, TR1 = 914 - BY0, 960 - BY0          # linhas das letras dentro do recorte
+
+
 def text_extent(band):
-    g = band.astype(np.float32).mean(2)
-    bright = (g > 190).astype(np.uint8)
-    near = cv2.dilate((g < 45).astype(np.uint8), K5)
-    txt = bright & near
+    g = band.astype(np.float32).mean(2)[TR0:TR1]
+    bright = g > 190
+    dark = (g < 45).astype(np.uint8)
+    # letra = pixel claro com contorno escuro dos DOIS lados (até 7 px); o fundo
+    # claro colado na borda da faixa só tem escuro de um lado e fica de fora
+    left = cv2.dilate(dark, np.ones((1, 8), np.uint8), anchor=(7, 0))
+    right = cv2.dilate(dark, np.ones((1, 8), np.uint8), anchor=(0, 0))
+    txt = bright & (left > 0) & (right > 0)
     cols = txt.sum(0)
     xs = np.where(cols > 0)[0]
-    if cols.sum() < 150:
+    if cols.sum() < 120:
         return None
-    # agrupa colunas (espaço entre palavras < 60 px) e fica com o grupo do centro
+    # agrupa colunas (espaço entre palavras < 60 px) e fica com o grupo que passa
+    # pelo centro da tela (outras coisas claras na imagem ficam de fora)
     groups = np.split(xs, np.where(np.diff(xs) > 60)[0] + 1)
-    groups = [gp for gp in groups if cols[gp].sum() > 40]
+    groups = [gp for gp in groups if cols[gp].sum() > 30]
     if not groups:
         return None
-    x0 = min(gp[0] for gp in groups)
-    x1 = max(gp[-1] for gp in groups)
+    gp = min(groups, key=lambda a: 0 if a[0] <= W / 2 <= a[-1] else min(abs(a[0] - W / 2), abs(a[-1] - W / 2)))
+    x0, x1 = gp[0], gp[-1]
     # a legenda é centralizada: rejeita o que não estiver em volta do meio
     if abs((x0 + x1) / 2 - W / 2) > 40:
         return None
