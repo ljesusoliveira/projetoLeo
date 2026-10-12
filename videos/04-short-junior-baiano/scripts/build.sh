@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Refaz o Short do Júnior Baiano a partir do vídeo longo salvo como original.mp4 nesta pasta
-# (release junior-baiano). Precisa de ffmpeg, numpy, pillow e opencv-python-headless.
+# (release junior-baiano). Precisa de ffmpeg, numpy, pillow, opencv-python-headless e onnxruntime.
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -10,9 +10,15 @@ GF=https://raw.githubusercontent.com/google/fonts/main/ofl
 [ -f "$FONTS/Anton-Regular.ttf" ] || curl -sSLo "$FONTS/Anton-Regular.ttf" "$GF/anton/Anton-Regular.ttf"
 [ -f "$FONTS/Montserrat.ttf" ] || curl -sSLo "$FONTS/Montserrat.ttf" "$GF/montserrat/Montserrat%5Bwght%5D.ttf"
 
+# 0) trilha original (sem direitos autorais) e voz da entrevista separada da música do vídeo longo
+MODEL=${MODEL:-Kim_Vocal_2.onnx}
+[ -f "$MODEL" ] || curl -sSLo "$MODEL" https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/Kim_Vocal_2.onnx
+python3 music.py
+python3 separate.py "$MODEL"
+
 # 1) imagem 9:16 (recorte que acompanha o lance, fundo desfocado, efeitos e textos)
 python3 compose.py video.mp4
-# 2) áudio (som dos lances + efeitos, -14 LUFS)
+# 2) áudio (voz do gancho + trilha + efeitos, -14 LUFS)
 python3 audio.py
 
 COMMON=(-pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -color_range tv)

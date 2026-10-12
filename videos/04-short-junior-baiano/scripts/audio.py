@@ -1,7 +1,9 @@
-"""Gera o áudio do Short do Júnior Baiano (audio.wav): som original de cada
-lance na mesma sincronia do vídeo, efeitos sintetizados (parada de fita no
-"SERÁ?", impacto no contato de cada falta, passagem entre lances, apito no
-cartão vermelho, subida de tensão no suspense) e volume final em -14 LUFS."""
+"""Gera o áudio do Short do Júnior Baiano (audio.wav): a voz dele no gancho
+(separada da música do vídeo longo por separate.py), a trilha original do
+music.py por baixo de tudo, efeitos sintetizados (parada de fita no "SERÁ?",
+impacto no contato de cada falta, passagem entre lances, apito no cartão
+vermelho, subida de tensão no suspense) e volume final em -14 LUFS.
+A música de fundo do vídeo longo não entra no Short."""
 import json
 import subprocess
 
@@ -16,33 +18,27 @@ def sec(n):
     return n / FPS
 
 
-# ---------------------------------------------------------------- som dos lances
+# ---------------------------------------------------------------- voz do gancho
+# só a fala da entrevista; nos lances o áudio do vídeo longo era a música de fundo
 labels = []
-srcs = [q for q in PIECES if q['kind'] == 'src']
-F.append(f"[0:a]asplit={len(srcs) + 1}" + ''.join(f"[s{i}]" for i in range(len(srcs) + 1)))
-si = 0
 for i, q in enumerate(PIECES):
     d = q['n'] / FPS
-    if q['kind'] == 'src':
+    if q['id'] == 'hook':
         a = q['src'][0]
-        F.append(f"[s{si}]atrim=start={a}:end={a + d},asetpts=PTS-STARTPTS,aresample={SR},"
-                 f"aformat=channel_layouts=stereo,volume=0.7,"
-                 f"afade=t=in:d=0.02,afade=t=out:st={d - 0.03:.3f}:d=0.03[p{i}]")
-        si += 1
+        F.append(f"[0:a]atrim=start={a}:end={a + d},asetpts=PTS-STARTPTS,aresample={SR},"
+                 f"aformat=channel_layouts=stereo,highpass=f=90,volume=1.1,"
+                 f"afade=t=in:d=0.02,afade=t=out:st={d - 0.06:.3f}:d=0.06[p{i}]")
     else:
         F.append(f"anullsrc=r={SR}:cl=stereo,atrim=duration={d:.4f}[p{i}]")
     labels.append(f"[p{i}]")
-F.append(''.join(labels) + f"concat=n={len(labels)}:v=0:a=1[base]")
+F.append(''.join(labels) + f"concat=n={len(labels)}:v=0:a=1,asplit[base][key]")
 mix.append('[base]')
 
-# torcida abafada por baixo do encerramento
+# trilha original, abaixando um pouco quando ele fala
 fin = BYID['final']
-fd = fin['n'] / FPS
-F.append(f"[s{si}]atrim=start=242.0:end={242.0 + fd:.3f},asetpts=PTS-STARTPTS,"
-         f"aresample={SR},aformat=channel_layouts=stereo,lowpass=f=1200,volume=0.2,"
-         f"afade=t=in:d=0.4,afade=t=out:st={fd - 0.8:.3f}:d=0.8,"
-         f"adelay={round(sec(fin['start']) * 1000)}:all=1[bed]")
-mix.append('[bed]')
+F.append(f"[1:a]aresample={SR},aformat=channel_layouts=stereo,volume=0.6[mus]")
+F.append("[mus][key]sidechaincompress=threshold=0.02:ratio=6:attack=10:release=300[music]")
+mix.append('[music]')
 
 # ---------------------------------------------------------------- efeitos
 k = 0
@@ -116,7 +112,7 @@ boom(sec(fin['start']), 1.0, 1.8)
 F.append(''.join(mix) + f"amix=inputs={len(mix)}:normalize=0:duration=first,"
          f"asetpts=PTS-STARTPTS,apad,atrim=duration={N / FPS:.4f}[aout]")
 open('audio_filter.txt', 'w').write(';\n'.join(F))
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'original.mp4', '-filter_complex_script', 'audio_filter.txt',
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'voz.wav', '-i', 'music.wav', '-filter_complex_script', 'audio_filter.txt',
                 '-map', '[aout]', '-c:a', 'pcm_f32le', 'mix.wav'], check=True)
 
 # volume no padrão do YouTube: loudnorm em duas passadas (mede e depois aplica de forma linear)
