@@ -11,6 +11,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/03-short-gancho`](videos/03-short-gancho) | Short-gancho para o vídeo longo "As maiores pinturas do futebol brasileiro" | Vertical 9:16, 0:37 |
 | [`videos/04-short-junior-baiano`](videos/04-short-junior-baiano) | Short-gancho para o vídeo longo das faltas mais duras de Júnior Baiano | Vertical 9:16, 0:51 |
 | [`videos/05-jobson-sem-legenda`](videos/05-jobson-sem-legenda) | Vídeo longo do Jobson com a legenda retirada | Horizontal 16:9, 4:26 |
+| [`videos/06-short-expulsoes`](videos/06-short-expulsoes) | Short-gancho para o vídeo longo "Expulsões tão bizarras que parecem mentira" | Vertical 9:16, 0:58 |
 
 ## Como baixar um vídeo
 
