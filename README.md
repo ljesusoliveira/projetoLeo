@@ -14,6 +14,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/06-short-expulsoes`](videos/06-short-expulsoes) | Short-gancho para o vídeo longo "Expulsões tão bizarras que parecem mentira" | Vertical 9:16, 0:58 |
 | [`videos/07-bismark-sem-legenda`](videos/07-bismark-sem-legenda) | Vídeo longo do Bismark com a legenda amarela retirada | Horizontal 16:9, 4:20 |
 | [`videos/08-short-mario-sergio`](videos/08-short-mario-sergio) | Short-gancho para o vídeo longo "O triste fim de Mário Sérgio" | Vertical 9:16, 0:35 |
+| [`videos/09-short-cate`](videos/09-short-cate) | Short-gancho para o vídeo longo "O triste fim de Catê" | Vertical 9:16, 0:32 |
 
 ## Como baixar um vídeo
 
