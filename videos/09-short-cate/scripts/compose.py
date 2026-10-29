@@ -145,6 +145,8 @@ def compose(n, src, q, cx, zoom, k, extra):
     if q.get('gain'):                                  # imagem de origem escura: mais exposição
         band = np.clip(band.astype(np.float32) * q['gain'], 0, 255).astype(np.uint8)
     bg = background(src[q['y0']:q['y1']], cx, 1.0 if cold else desat)   # só a área usada
+    if extra.get('blur', 0) > 0.3:
+        band = cv2.GaussianBlur(band, (0, 0), extra['blur'])
     if cold:
         band = rain(band, n)
     band = film(band, n)
@@ -187,6 +189,8 @@ def effects(q, k, n):
     if q.get('darken'):                                # respiro: a imagem escurece
         extra['desat'] = 0.85
         extra['dim'] = 1 - 0.75 * x
+    if q.get('reveal') and k < 18:                     # revelação: entra desfocado e ganha foco
+        extra['blur'] = 14 * (1 - smooth(k / 17))
     if q.get('fade_in') and k < 10:                    # volta do escuro
         extra['dim'] = 0.25 + 0.75 * smooth(k / 9)
     hits = []

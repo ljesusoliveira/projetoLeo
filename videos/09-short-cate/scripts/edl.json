@@ -28,8 +28,8 @@
   {"id": "samp-foto", "src": 136.4, "cut": 140.62, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.08], "flash_in": true},
   {"id": "samp-close", "src": 142.85, "cut": 144.58, "y0": 0, "y1": 1080, "cx": 0.48, "zoom": [1.0, 1.12], "zoom_y": 0.4, "punch": true, "desat_from": 143.70, "shake_at": 143.90},
   {"id": "escuro", "freeze": true, "of": "samp-close", "cut": "gap:g1", "darken": true},
-  {"id": "velho2", "src": 214.0, "cut": 30.80, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.12, 1.22], "zoom_y": 0.42, "look": "frio", "fade_in": true},
-  {"id": "final", "freeze": true, "of": "velho2", "cut": "gap:fim", "endcard": true, "look": "frio"}
+  {"id": "carro", "src": 3.6, "cut": 30.80, "y0": 0, "y1": 1080, "cx": 0.47, "zoom": [1.05, 1.15], "look": "frio", "fade_in": true, "reveal": true},
+  {"id": "final", "freeze": true, "of": "carro", "cut": "gap:fim", "endcard": true, "look": "frio"}
  ],
  "bigtext": [
   {"text": ["CAMPEÃO", "DO MUNDO"], "from": 1.45, "to": 2.72, "color": "yellow"},
