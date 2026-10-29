@@ -15,6 +15,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/07-bismark-sem-legenda`](videos/07-bismark-sem-legenda) | Vídeo longo do Bismark com a legenda amarela retirada | Horizontal 16:9, 4:20 |
 | [`videos/08-short-mario-sergio`](videos/08-short-mario-sergio) | Short-gancho para o vídeo longo "O triste fim de Mário Sérgio" | Vertical 9:16, 0:35 |
 | [`videos/09-short-cate`](videos/09-short-cate) | Short-gancho para o vídeo longo "O triste fim de Catê" | Vertical 9:16, 0:32 |
+| [`videos/10-short-cate-v2`](videos/10-short-cate-v2) | Short do Catê, versão 2: "Ele foi campeão do mundo pelo São Paulo e morreu aos 38 anos" | Vertical 9:16, 0:35 |
 
 ## Como baixar um vídeo
 
