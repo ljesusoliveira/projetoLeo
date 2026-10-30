@@ -54,6 +54,19 @@ Se tiver alguma outra ideia que deixe o Short mais forte, use, e me explique o q
 
 Câmera lenta e congelamento só entram se fizerem sentido para a história, no quadro exato do momento decisivo. Se não combinarem com o vídeo, use outro recurso.
 
+## TRANSIÇÕES (sempre)
+A partir de agora o vídeo longo pode chegar SEM transições e SEM música de fundo. Em toda edição, inclua transições profissionais entre os trechos, escolhidas por você para cada corte, no ritmo da narração:
+- Chicote (borrão de movimento + deslizamento) para mudar de fase da carreira ou de lugar.
+- Zoom de entrada (punch) e flash curto nas viradas e nos momentos de impacto.
+- Desfoque que ganha foco para revelar uma imagem importante.
+- Escurecimento (fade para o preto) antes de um momento de suspense ou da tragédia.
+- Brilho quente atravessando a tela para momentos de glória.
+Varie as transições ao longo do Short (não repita a mesma em todo corte) e nunca deixe um corte seco entre duas imagens sem motivo. Liste no PLANO DE CORTE qual transição entra em cada trecho.
+
+## MÚSICA DE FUNDO
+- Sem música de fundo, a não ser que o usuário mande uma música livre de direitos junto com o vídeo (no mesmo release). O Pixabay bloqueia downloads automáticos (verificação anti-robô) e o YouTube não é acessível daqui, então não baixe música por conta própria.
+- Se o usuário mandar música: deixe baixa (por volta de −20 dB abaixo da voz), abaixando automaticamente quando a narração fala e subindo um pouco nas pausas e na tela final.
+
 ## FLUXO DE TRABALHO
 1. Antes de renderizar, me mostre o PLANO DE CORTE: uma tabela com a ordem dos trechos, a minutagem de origem no vídeo longo, a frase dita, os textos na tela e os efeitos de cada trecho.
 2. Espere a minha aprovação.
@@ -73,6 +86,7 @@ Fale sempre em português com o usuário.
 - Baixe o vídeo do release com `curl -L https://github.com/ljesusoliveira/projetoLeo/releases/download/<tag>/<arquivo>` e confira o `sha256` com o `digest` do release.
 - Base de código: os scripts de `videos/08-short-mario-sergio/scripts/` (`edl.json` marcado no tempo da narração, `timeline.py`, `compose.py`, `overlay.py`, `audio.py`, `build.sh`). Copie para a pasta nova e adapte.
 - Transcrição: o Hugging Face é bloqueado aqui. Use `pip install sherpa-onnx` (PyPI funciona) e os modelos dos releases do GitHub `k2-fsa/sherpa-onnx` (tag `asr-models`): `sherpa-onnx-whisper-small.tar.bz2` e `silero_vad.onnx`. Para achar o tempo de cada palavra, transcreva prefixos que terminam nas pausas (vales de energia da voz) e corte só nessas pausas.
-- Pixabay e YouTube (Audio Library) são bloqueados pela rede deste ambiente. Sem liberar esses domínios nas configurações de rede do ambiente, use só o áudio original e avise o usuário.
+- Pixabay: o domínio pode estar liberado na rede do ambiente, mas o site responde com a verificação anti-robô da Cloudflare; não tente contornar. YouTube (Audio Library) é bloqueado. Música só se o usuário mandar o arquivo.
+- Base de código mais recente (transições em chicote, punch-in nas palavras, brilho quente, carimbos de data, sépia): `videos/10-short-cate-v2/scripts/`.
 - O vídeo longo tem um selo do canal no canto de cima à direita (x ≥ 1747, y ≤ 175), uma faixa vermelha "Bastidores do Futebol" embaixo à esquerda (y 988–1025, x 0–421) e botões animados "INSCREVA-SE/INSCRITO" em alguns trechos. Recorte para não pegar nenhum deles, nem na imagem nem no fundo desfocado.
 - Áreas seguras em 1080x1920: nada importante acima de y = 288 nem abaixo de y = 1536.
