@@ -66,6 +66,7 @@ Varie as transições ao longo do Short (não repita a mesma em todo corte) e nu
 ## MÚSICA DE FUNDO
 - Sem música de fundo, a não ser que o usuário mande uma música livre de direitos junto com o vídeo (no mesmo release). O Pixabay bloqueia downloads automáticos (verificação anti-robô) e o YouTube não é acessível daqui, então não baixe música por conta própria.
 - Se o usuário mandar música: deixe baixa (por volta de −20 dB abaixo da voz), abaixando automaticamente quando a narração fala e subindo um pouco nas pausas e na tela final.
+- Vídeo SEM narração (compilados, tops, rankings): o usuário quer uma batida original para não ficar sem som. Crie a batida do zero (sintetizada nota por nota, sem amostras de terceiros, então sem direito autoral), com seções que acompanham a edição (gancho, contagem, clímax, suspense, final), cortes sincronizados com a batida e volume em −14 LUFS. Base: `videos/12-short-top10-centroavantes/scripts/musica.py`. Garanta médios (150 Hz a 5 kHz) para a batida aparecer em alto-falante de celular, não só grave.
 
 ## FLUXO DE TRABALHO
 1. Antes de renderizar, me mostre o PLANO DE CORTE: uma tabela com a ordem dos trechos, a minutagem de origem no vídeo longo, a frase dita, os textos na tela e os efeitos de cada trecho.
