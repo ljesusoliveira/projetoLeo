@@ -1,15 +1,19 @@
 """Batida original do Short (sintetizada aqui, nota por nota: sem nenhuma
 amostra nem música de terceiros, então não tem direito autoral).
 
-Estilo trailer de esporte em lá menor, 120 BPM (1 tempo = 0,5 s, 1 compasso
-= 2 s), montada em seções medidas em tempos:
-  hook     impacto no primeiro quadro, pad e subida de tensão
-  count    bateria (bumbo, caixa, chimbal) e baixo; a contagem do #10 ao #4
-  top      a mesma base mais cheia (palmas, chimbal em semicolcheias,
-           acorde de metais) para o Top 3
+Estilo trailer de esporte em lá menor, 120 BPM (1 tempo = 0,5 s = 15 quadros
+a 30 fps, então todo corte cai exatamente num tempo), montada em seções
+medidas em tempos, uma por trecho do Short:
+  hook     impacto no primeiro quadro, pad baixo (embaixo da narração) e subida
+  count    bateria (bumbo, caixa, chimbal), baixo e arpejo; uma seção por
+           posição, sempre começando num tempo forte; level 2 = mais cheia
+  stinger  "TOP 3": para tudo, impacto e subida invertida até a volta
+  top      a base cheia (palmas, chimbal em semicolcheias, acordes de metais)
   suspense tudo para: grave longo, drone e batida de coração
   end      batida final e cauda
-Cada seção pode marcar 'fill' (virada de caixa + subida no último tempo).
+Opções: 'fill' (virada de caixa + subida no último tempo), 'hit' (impacto e
+prato no primeiro tempo, quando entra a tela de posição), 'accents' (tempos
+com prato, nos cortes internos).
 
   python3 musica.py demo saida.wav      -> prévia de ~30 s
   python3 musica.py edl saida.wav       -> trilha do Short (seções do edl.json)
@@ -134,6 +138,13 @@ def impact(dur=1.8, vol=1.0):
     return np.tanh(1.4 * (boom + hit)) * vol
 
 
+def crash(vol=1.0, dur=1.6):
+    t = t_(dur)
+    x = lowpass(highpass(RNG.normal(0, 1, len(t)), 3), 2) * np.exp(-t * 2.6)
+    ring = sum(np.sin(2 * np.pi * f * t) for f in (3150, 4270, 5480)) * 0.04 * np.exp(-t * 3.5)
+    return (x * 0.3 + ring) * vol
+
+
 def reverse_cymbal(dur=1.2, vol=1.0):
     t = t_(dur)
     x = highpass(RNG.normal(0, 1, len(t)), 2) * np.exp(-t * 3.2) * 0.35
@@ -200,12 +211,18 @@ def section(m, s, t0):
     t1 = t0 + dur
     bar0 = s.get('bar', 0)
     if kind == 'hook':
-        m.add('fx', impact(2.2, 0.9), t0)
-        m.add('music', pad(CHORDS[0], dur + 0.3, 1.0), t0)
-        m.add('fx', riser(dur, 0.8), t0)
+        m.add('fx', impact(2.2, s.get('impact', 0.9)), t0)
+        m.add('music', pad(CHORDS[0], dur + 0.3, s.get('pad', 1.0)), t0)
+        m.add('fx', riser(min(dur, 3.0), 0.8), t1 - min(dur, 3.0))
         m.add('fx', reverse_cymbal(min(1.2, dur), 0.8), t1 - min(1.2, dur))
+    elif kind == 'stinger':
+        m.add('fx', impact(2.4, 1.0), t0)
+        m.add('drums', crash(0.9), t0)
+        m.add('music', pad(CHORDS[2], dur + 0.2, 0.8), t0)
+        m.add('fx', reverse_cymbal(dur, 0.9), t0)
     elif kind in ('count', 'top'):
         full = kind == 'top'
+        lvl2 = full or s.get('level', 1) >= 2
         for e in range(beats * 2):                     # colcheias
             at = t0 + e * BEAT / 2
             beat_in_bar = (e // 2) % 4
@@ -217,13 +234,13 @@ def section(m, s, t0):
                     m.kicks.append(at)
                 if beat_in_bar in (1, 3):
                     m.add('drums', snare(0.9), at)
-                    if full:
-                        m.add('drums', clap(0.9), at)
+                    if lvl2:
+                        m.add('drums', clap(0.8 if not full else 0.9), at)
             elif full and e % 8 == 5:                  # bumbo extra no contratempo
                 m.add('drums', kick(0.8), at)
                 m.kicks.append(at)
             m.add('drums', hat(0.9 if e % 2 else 0.6), at)
-            if full:
+            if lvl2:
                 m.add('drums', hat(0.45), at + BEAT / 4)
                 if e % 4 == 3:
                     m.add('drums', hat(0.5, open_=True), at)
@@ -237,14 +254,18 @@ def section(m, s, t0):
                     m.add('music', stab(chord, 0.5, 0.9), at)
             if full and e % 8 == 3:
                 m.add('music', stab(chord, 0.3, 0.6), at)
+        if s.get('hit'):                               # entra a tela de posição
+            m.add('fx', impact(1.4, 0.55 if not full else 0.75), t0)
+            m.add('drums', crash(0.7), t0)
+        for b in s.get('accents', []):                 # cortes internos
+            m.add('drums', crash(0.45, 1.0), t0 + b * BEAT)
         if s.get('fill'):                              # virada no último tempo
             for k in range(4):
                 m.add('drums', snare(0.35 + 0.18 * k), t1 - BEAT + k * BEAT / 4)
             m.add('fx', riser(min(2.0, dur), 0.55), t1 - min(2.0, dur))
-        if s.get('crash', True):
-            m.add('fx', reverse_cymbal(0.5, 0.25), t0 - 0.5) if t0 > 0.5 else None
     elif kind == 'suspense':
         m.add('fx', impact(2.6, 1.0), t0)
+        m.add('drums', crash(0.6, 2.4), t0)
         m.add('music', drone(dur, 1.0), t0)
         k = 0.45
         while k < dur - 0.6:

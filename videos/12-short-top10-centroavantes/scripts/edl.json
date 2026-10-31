@@ -1,0 +1,49 @@
+{
+ "fps": 30,
+ "bpm": 120,
+ "note": "Roteiro do Short (Top 10 centroavantes). Tudo é medido em tempos da batida (120 BPM: 1 tempo = 0,5 s = 15 quadros), então todo corte cai num tempo. 'src' = início do trecho no vídeo longo (s); cx = centro horizontal do recorte (0 a 1; lista = acompanha o lance, com tempos do vídeo longo); punch = punch-in de 8% no instante do gol (s do vídeo longo); look 'bw' = imagem antiga em preto e branco/sépia (correção de cor e grão mais forte), 'retro' = imagem antiga colorida; wb = tira parte do tom esverdeado/amarelado da imagem (0 a 1); sat = saturação própria do trecho. O nº1 não aparece em nenhum lugar: a contagem para no #2 e o fim é só o suspense.",
+ "narration": {"src": [0.06, 4.03]},
+ "captions": [
+  [0.06, 1.05, "DEZ CENTROAVANTES,"],
+  [1.05, 2.12, "DEZ LENDAS,"],
+  [2.12, 2.55, "MAS SÓ UM"],
+  [2.55, 3.25, "PODE SER O MAIOR"],
+  [3.25, 4.50, "DA HISTÓRIA DO BRASIL."]
+ ],
+ "highlight": ["DEZ", "LENDAS,", "UM", "MAIOR", "BRASIL."],
+ "players": {
+  "10": ["SERGINHO CHULAPA", "MAIOR ARTILHEIRO DA HISTÓRIA DO SÃO PAULO"],
+  "9": ["CARECA", "PARCEIRO DE MARADONA NO NAPOLI"],
+  "8": ["ADRIANO", "O IMPERADOR"],
+  "7": ["VAVÁ", "O PEITO DE AÇO • BICAMPEÃO DO MUNDO"],
+  "6": ["REINALDO", "28 GOLS EM 18 JOGOS NO BRASILEIRO DE 1977"],
+  "5": ["ADEMIR DE MENEZES", "ARTILHEIRO DA COPA DE 1950"],
+  "4": ["ROBERTO DINAMITE", "MAIOR ARTILHEIRO DA HISTÓRIA DO BRASILEIRÃO"],
+  "3": ["ROMÁRIO", "MELHOR JOGADOR DA COPA DE 1994"],
+  "2": ["RONALDO FENÔMENO", "3 VEZES MELHOR DO MUNDO PELA FIFA"]
+ },
+ "end_title": ["TOP 10 MAIORES", "CENTROAVANTES DO BRASIL"],
+ "pieces": [
+  {"id": "hook", "beats": 9, "src": 475.0, "y0": 90, "y1": 1080, "cx": [[475.0, 0.55], [476.5, 0.5], [478.0, 0.45], [479.5, 0.45]], "zoom": [1.05, 1.12], "punch": [477.45], "section": "hook"},
+
+  {"id": "p10", "pos": 10, "beats": 9, "src": 45.2333, "y0": 60, "y1": 1080, "cx": [[45.25, 0.45], [47.5, 0.5], [47.7, 0.5], [48.6, 0.6], [49.7, 0.6]], "zoom": [1.08, 1.1], "punch": [48.3], "look": "retro", "wb": 0.4},
+  {"id": "p9", "pos": 9, "beats": 8, "src": 58.85, "y0": 90, "y1": 1080, "cx": [[58.85, 0.45], [60.0, 0.5], [61.0, 0.42], [62.85, 0.4]], "zoom": [1.0, 1.04], "punch": [61.9], "look": "retro", "wb": 0.4},
+  {"id": "p8", "pos": 8, "beats": 8, "src": 133.1, "y0": 90, "y1": 1080, "cx": [[133.1, 0.5], [134.5, 0.45], [135.4, 0.5], [136.1, 0.62], [137.1, 0.62]], "zoom": [1.0, 1.04], "punch": [135.9]},
+  {"id": "p7", "pos": 7, "beats": 7, "src": 176.4, "y0": 0, "y1": 900, "cx": [[176.4, 0.42], [177.4, 0.42], [177.5, 0.5], [178.0, 0.42], [179.9, 0.42]], "zoom": [1.08, 1.12], "punch": [178.4], "look": "bw"},
+  {"id": "p6", "pos": 6, "beats": 7, "src": 228.1, "y0": 60, "y1": 1080, "cx": [[228.1, 0.5], [230.7, 0.55], [230.75, 0.4], [231.6, 0.4]], "zoom": [1.04, 1.08], "punch": [230.85], "look": "retro", "sat": 0.85},
+  {"id": "p5", "pos": 5, "beats": 6, "src": 286.1, "y0": 0, "y1": 1000, "cx": [[286.1, 0.45], [287.5, 0.55], [288.5, 0.55], [289.1, 0.5]], "zoom": [1.08, 1.12], "punch": [287.55], "look": "bw"},
+  {"id": "p4", "pos": 4, "beats": 6, "src": 345.3, "y0": 90, "y1": 1080, "cx": [[345.3, 0.4], [346.5, 0.45], [347.0, 0.55], [347.25, 0.4], [348.3, 0.4]], "zoom": [1.0, 1.05], "punch": [347.55], "look": "retro", "wb": 0.45, "fill": true},
+
+  {"id": "top3", "beats": 2, "stinger": "TOP 3"},
+
+  {"id": "p3a", "pos": 3, "beats": 8, "src": 364.5, "y0": 90, "y1": 1080, "cx": [[364.5, 0.48], [366.0, 0.52], [367.5, 0.55], [368.5, 0.55]], "zoom": [1.05, 1.1], "punch": [364.95]},
+  {"id": "p3b", "pos": 3, "beats": 6, "src": 383.0, "y0": 90, "y1": 1080, "cx": [[383.0, 0.45], [384.0, 0.4], [385.0, 0.35], [386.0, 0.3]], "zoom": [1.05, 1.1], "punch": [385.5]},
+  {"id": "p3c", "pos": 3, "beats": 4, "src": 417.9, "y0": 90, "y1": 1080, "cx": [[417.9, 0.5], [419.0, 0.45], [419.9, 0.4]], "zoom": [1.0, 1.05], "punch": [419.4], "look": "retro", "wb": 0.75, "fill": true},
+
+  {"id": "p2a", "pos": 2, "beats": 8, "src": 431.7, "y0": 90, "y1": 1080, "cx": [[431.7, 0.45], [433.0, 0.5], [434.5, 0.5], [435.7, 0.5]], "zoom": [1.05, 1.1], "punch": [434.8]},
+  {"id": "p2b", "pos": 2, "beats": 9, "src": 447.25, "y0": 90, "y1": 1080, "cx": [[447.25, 0.55], [449.0, 0.5], [450.5, 0.45], [451.0, 0.3], [451.75, 0.35]], "zoom": [1.05, 1.1], "punch": [451.2]},
+  {"id": "p2c", "pos": 2, "beats": 3, "src": 453.4, "y0": 90, "y1": 1080, "cx": [[453.4, 0.45]], "zoom": [1.05, 1.1]},
+
+  {"id": "fim", "beats": 14, "suspense": true}
+ ]
+}

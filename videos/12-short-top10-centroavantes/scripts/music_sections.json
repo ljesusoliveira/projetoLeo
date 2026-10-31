@@ -1,0 +1,97 @@
+[
+ {
+  "type": "hook",
+  "beats": 9,
+  "impact": 0.6,
+  "pad": 0.55
+ },
+ {
+  "type": "count",
+  "beats": 9,
+  "bar": 0,
+  "level": 1,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 8,
+  "bar": 1,
+  "level": 1,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 8,
+  "bar": 2,
+  "level": 1,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 7,
+  "bar": 3,
+  "level": 2,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 7,
+  "bar": 4,
+  "level": 2,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 6,
+  "bar": 5,
+  "level": 2,
+  "hit": true,
+  "fill": false
+ },
+ {
+  "type": "count",
+  "beats": 6,
+  "bar": 6,
+  "level": 2,
+  "hit": true,
+  "fill": true
+ },
+ {
+  "type": "stinger",
+  "beats": 2
+ },
+ {
+  "type": "top",
+  "beats": 18,
+  "bar": 7,
+  "hit": true,
+  "accents": [
+   8,
+   14
+  ],
+  "fill": true
+ },
+ {
+  "type": "top",
+  "beats": 20,
+  "bar": 9,
+  "hit": true,
+  "accents": [
+   8,
+   17
+  ],
+  "fill": false
+ },
+ {
+  "type": "suspense",
+  "beats": 14,
+  "hits": [
+   3.5
+  ]
+ }
+]
