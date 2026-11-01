@@ -1,0 +1,47 @@
+{
+ "fps": 30,
+ "note": "Roteiro do Short das entrevistas mais engraçadas. Cada entrevista entra INTEIRA, com o áudio original: 'src' é o início e 'frames' a duração, e os dois pontos caem onde o próprio vídeo longo troca de entrevista ou numa pausa logo antes dela (conferido no áudio, nenhuma fala cortada). No final, a narração de abertura do vídeo longo ('Ronaldinho, Adriano, Ronaldo, Renato Gaúcho, Cássio e muitos outros. Prepara aí...') cobre lampejos desses jogadores (só imagem) e o encerramento. cx = centro horizontal do recorte (0 a 1; lista = acompanha, com tempos do vídeo longo). Os 'stickers' citam o que é dito no áudio; 'punch' = zoom de 7% no instante (s do vídeo longo). 'video_from' = antes desse instante a imagem fica no primeiro quadro bom (o vídeo longo tem 2 quadros de transição ali); 'freeze_after' = a partir desse instante a imagem fica parada no último quadro (o áudio termina a palavra, mas a imagem do vídeo longo já trocou de entrevista).",
+ "title": ["AS ENTREVISTAS MAIS", "ENGRAÇADAS DO FUTEBOL"],
+ "end_title": ["AS ENTREVISTAS MAIS", "ENGRAÇADAS DO FUTEBOL", "BRASILEIRO"],
+ "clips": [
+  {"id": "rony", "src": 144.50, "frames": 549, "video_from": 144.567,
+   "cx": [[144.5, 0.33], [146.0, 0.42], [146.5, 0.47], [147.0, 0.56], [148.3, 0.5], [149.0, 0.47], [153.8, 0.47], [154.3, 0.56], [155.3, 0.56], [155.5, 0.5], [157.4, 0.5], [157.5, 0.53], [160.3, 0.53], [160.6, 0.42], [162.8, 0.42]],
+   "punch": [145.45],
+   "stickers": [
+    {"text": "IMPOSSÍVEL NÃO RIR", "emoji": "😂", "from": 144.50, "to": 145.40, "style": "red"},
+    {"text": "MANTEMOS… MANTÊVAMOS?!", "emoji": "🤣", "from": 145.45, "to": 151.80},
+    {"text": "E O COLEGA NÃO PERDOOU", "emoji": "😂", "from": 154.20, "to": 162.80, "style": "white"}
+   ]},
+  {"id": "marcelo", "src": 315.42, "frames": 471,
+   "cx": [[315.4, 0.43], [325.8, 0.43], [326.3, 0.47], [328.9, 0.47], [328.97, 0.5], [331.2, 0.5]],
+   "punch": [324.50],
+   "stickers": [
+    {"text": "“É DIA DO SEU ANIVERSÁRIO?”", "emoji": "🎂", "from": 315.60, "to": 323.60, "style": "white"},
+    {"text": "12 DE MAIO… OU 12 DE JUNHO?", "emoji": "🤔", "from": 323.70, "to": 331.12}
+   ]},
+  {"id": "lf", "src": 178.85, "frames": 454, "freeze_after": 193.80,
+   "cx": [[178.85, 0.46], [182.4, 0.46], [182.43, 0.5], [187.6, 0.5], [187.67, 0.48], [193.7, 0.48]],
+   "punch": [184.60, 191.70],
+   "stickers": [
+    {"text": "“JAMAIS A GENTE PODE FICAR DE FORA”", "emoji": "🤝", "from": 179.40, "to": 182.85, "style": "white"},
+    {"text": "“TEM QUE AJUDAR OS COMPANHEIROS”", "emoji": "💪", "from": 182.85, "to": 184.55},
+    {"text": "“SOU O BATEDOR OFICIAL”", "emoji": "🎯", "from": 184.60, "to": 187.90, "style": "white"},
+    {"text": "BRIGAR OU BATER O PÊNALTI?", "emoji": "🤔", "from": 188.00, "to": 191.65},
+    {"text": "“PREFIRO AJUDAR NA BRIGA”", "emoji": "🥊", "from": 191.70, "to": 194.00, "style": "red"}
+   ]}
+ ],
+ "outro": {
+  "narration": [4.79, 12.12],
+  "tail": 30,
+  "flashes": [
+   {"label": "RONALDINHO", "src": 342.6, "from": 4.79, "to": 5.40, "cx": 0.2},
+   {"label": "ADRIANO", "src": 35.8, "from": 5.40, "to": 5.70, "cx": 0.46},
+   {"label": "RONALDO", "src": 249.8, "from": 5.70, "to": 6.00, "cx": 0.33},
+   {"label": "RENATO GAÚCHO", "src": 469.5, "from": 6.00, "to": 6.97, "cx": 0.43},
+   {"label": "CÁSSIO", "src": 165.5, "from": 6.97, "to": 7.54, "cx": 0.4},
+   {"label": "E MUITOS OUTROS…", "src": 619.8, "from": 7.54, "to": 7.84, "cx": 0.45},
+   {"label": "E MUITOS OUTROS…", "src": 411.8, "from": 7.84, "to": 8.14, "cx": 0.5},
+   {"label": "E MUITOS OUTROS…", "src": 431.8, "from": 8.14, "to": 8.50, "cx": 0.62, "y1": 880}
+  ]
+ }
+}

@@ -18,6 +18,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/10-short-cate-v2`](videos/10-short-cate-v2) | Short do Catê, versão 2: "Ele foi campeão do mundo pelo São Paulo e morreu aos 38 anos" | Vertical 9:16, 0:35 |
 | [`videos/11-short-mozer`](videos/11-short-mozer) | Short-gancho para o vídeo longo "Mozer, o ídolo do Flamengo que ficou fora de duas Copas do Mundo" | Vertical 9:16, 0:35 |
 | [`videos/12-short-top10-centroavantes`](videos/12-short-top10-centroavantes) | Short-gancho para o vídeo longo "Top 10 Maiores Centroavantes do Brasil" (sem mostrar o nº1) | Vertical 9:16, 0:57 |
+| [`videos/13-short-entrevistas`](videos/13-short-entrevistas) | Short-gancho para o vídeo longo "As Entrevistas Mais Engraçadas do Futebol Brasileiro" | Vertical 9:16, 0:57 |
 
 ## Como baixar um vídeo
 
