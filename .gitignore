@@ -16,3 +16,5 @@ videos/*/scripts/**/*.wav
 videos/*/scripts/**/yavg.txt
 videos/*/scripts/**/cuts.txt
 videos/*/scripts/**/audio_filter.txt
+videos/*/scripts/remotion/node_modules/
+videos/*/scripts/remotion/public/*.ttf

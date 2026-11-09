@@ -1,0 +1,27 @@
+{
+ "n": 1045,
+ "fps": 30,
+ "bandY": 440,
+ "bandH": 1060,
+ "endTitle": [
+  "VIOLA: PROVOCOU O PALMEIRAS",
+  "E DEPOIS VESTIU A",
+  "CAMISA DO RIVAL"
+ ],
+ "vilao": [
+  155,
+  173
+ ],
+ "reviravolta": [
+  735,
+  766
+ ],
+ "versus": [
+  905,
+  997
+ ],
+ "end": [
+  997,
+  1045
+ ]
+}
