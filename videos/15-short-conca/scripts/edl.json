@@ -1,0 +1,93 @@
+{
+ "fps": 30,
+ "note": "Roteiro do Short do Conca. 'audio': trechos da narração original (s no vídeo longo), em ordem; 'gap' é pausa sem narração. 'video': cada imagem começa onde a anterior termina e vai até 'cut' (instante da NARRAÇÃO, em s do vídeo longo, ou 'gap:<id>' = fim da pausa). 'src' = de onde vem a imagem; 'freeze' = segura o último quadro da imagem 'of'. cx = centro horizontal do recorte (0 a 1; lista = acompanha, com tempos do vídeo longo); y0/y1 = faixa vertical usada (corta textos e botões do vídeo longo). Transições: whip = chicote na entrada; punch = punch-in de 8%; flash = flash com tremida; leak = brilho quente; reveal = entra desfocado e ganha foco; fade_in/fade_out = escurecimento; look sepia = monocromático. 'remotion': elementos animados feitos no Remotion (ranking dos mais bem pagos, BRASIL -> CHINA, altura e peso, encerramento); 'marks' = instantes internos de cada um. Textos também usam o tempo da narração.",
+ "title": ["CONCA: SÓ GANHAVA MENOS", "QUE MESSI E CRISTIANO RONALDO"],
+ "end_title": ["CONCA: SÓ GANHAVA", "MENOS QUE MESSI E", "CRISTIANO RONALDO"],
+ "audio": [
+  {"id": "a1", "src": [0.08, 12.66]},
+  {"id": "g0", "gap": 0.3},
+  {"id": "a2", "src": [12.96, 15.03]},
+  {"id": "g1", "gap": 0.3},
+  {"id": "a3", "src": [122.18, 129.50]},
+  {"id": "g2", "gap": 0.3},
+  {"id": "a4", "src": [170.34, 174.66]},
+  {"id": "g3", "gap": 0.4},
+  {"id": "a5", "src": [25.60, 27.55]},
+  {"id": "hold", "gap": 0.4},
+  {"id": "fim", "gap": 1.8}
+ ],
+ "chapters": [0.08, 12.96, 122.18, 170.34, 25.60, "gap:fim-start"],
+ "video": [
+  {"id": "bola-de-ouro", "src": 156.82, "cut": 2.50, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.08], "zoom_y": 0.42},
+  {"id": "abraco", "src": 0.10, "cut": 4.40, "y0": 0, "y1": 1080, "cx": [[0.1, 0.45], [1.9, 0.5]], "zoom": [1.0, 1.05], "whip": true},
+  {"id": "quadro", "src": 159.45, "cut": 5.95, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.06], "flash": [5.05], "leak": [5.05]},
+  {"id": "rosto", "src": 5.00, "cut": 7.55, "y0": 0, "y1": 1080, "cx": 0.38, "zoom": [1.05, 1.12], "zoom_y": 0.4, "whip": true},
+  {"id": "tunel", "src": 2.10, "cut": 9.30, "y0": 0, "y1": 1080, "cx": 0.62, "zoom": [1.0, 1.06], "zoom_y": 0.4},
+  {"id": "jogo", "src": 162.20, "cut": 12.66, "y0": 120, "y1": 1080, "cx": 0.55, "zoom": [1.0, 1.05]},
+  {"id": "china", "src": 168.15, "cut": 14.60, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.05], "zoom_y": 0.4, "whip": true},
+  {"id": "china-f", "freeze": true, "of": "china", "cut": "gap:g1", "zoom": [1.05, 1.09], "flash": [14.60]},
+  {"id": "jovem", "src": 131.00, "cut": 122.40, "y0": 120, "y1": 830, "cx": 0.51, "zoom": [1.0, 1.0], "zoom_y": 0.4, "look": "sepia", "reveal": true},
+  {"id": "jovem-f", "freeze": true, "of": "jovem", "cut": 126.25, "zoom": [1.0, 1.12], "look": "sepia"},
+  {"id": "drible", "src": 20.25, "cut": 128.50, "y0": 0, "y1": 1000, "cx": [[20.25, 0.66], [20.8, 0.66], [21.3, 0.62], [21.8, 0.72], [22.3, 0.62], [22.5, 0.6]], "zoom": [1.0, 1.04], "whip": true, "color_in": true},
+  {"id": "drible2", "src": 26.40, "cut": 129.50, "y0": 0, "y1": 1080, "cx": [[26.4, 0.5], [27.4, 0.6]], "zoom": [1.0, 1.04], "punch": [128.50]},
+  {"id": "bandeira", "src": 170.30, "cut": 172.20, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.06], "zoom_y": 0.4, "fade_in": true},
+  {"id": "bracos", "src": 172.65, "cut": 174.66, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.08], "zoom_y": 0.35, "leak": [173.00], "fade_out": true},
+  {"id": "escuro", "freeze": true, "of": "bracos", "cut": "gap:g3", "dark": true},
+  {"id": "depois", "src": 206.75, "cut": 27.55, "y0": 200, "y1": 1080, "cx": 0.48, "zoom": [1.0, 1.12], "zoom_y": 0.3, "look": "sepia", "reveal": true},
+  {"id": "depois-f", "freeze": true, "of": "depois", "cut": "gap:hold", "zoom": [1.12, 1.16], "look": "sepia"},
+  {"id": "final", "freeze": true, "of": "depois", "cut": "gap:fim", "endcard": true}
+ ],
+ "stamps": [
+  {"text": "2011", "from": 6.07, "to": 7.55}
+ ],
+ "bigtext": [
+  {"text": ["26 ANOS"], "from": 5.05, "to": 5.95, "color": "yellow", "size": 200, "y": 0.5}
+ ],
+ "lower": [
+  {"text": "BOLA DE OURO 2010", "from": 0.40, "to": 2.45},
+  {"text": "ENGENHÃO • 2011", "from": 172.25, "to": 174.66}
+ ],
+ "remotion": {
+  "ranking": {"from": 7.95, "to": 12.66, "marks": {"messi": 11.45, "cr": 11.85}},
+  "china": {"from": 13.80, "to": "gap:g1", "marks": {"brasil": 14.05, "china": 14.55}},
+  "medidas": {"from": 123.20, "to": 126.25, "marks": {"altura": 123.20, "peso": 124.70}},
+  "end": {"from": "gap:fim-start", "to": "gap:fim"}
+ },
+ "highlight": ["CONCA", "MELHOR", "BRASILEIRÃO", "FLUMINENSE", "26", "ANOS", "2011", "TERCEIRO", "PLANETA", "MESSI", "CRISTIANO", "RONALDO", "BRASIL", "CHINA", "BAIXINHO", "1,70", "58", "FRÁGIL", "BOLA", "APLAUDIDO", "ENGENHÃO", "FICAR", "ACONTECEU"],
+ "captions": [
+  [0.08, 1.10, "DARIO CONCA"],
+  [1.10, 1.90, "FOI O MELHOR"],
+  [1.90, 2.66, "JOGADOR DO BRASILEIRÃO,"],
+  [2.66, 3.60, "LEVOU O FLUMINENSE"],
+  [3.60, 4.20, "A UM TÍTULO"],
+  [4.20, 5.05, "QUE NÃO VINHA HAVIA"],
+  [5.05, 5.90, "26 ANOS"],
+  [5.90, 6.50, "E, EM 2011,"],
+  [6.50, 8.15, "VIROU O TERCEIRO"],
+  [8.15, 9.20, "JOGADOR MAIS BEM PAGO"],
+  [9.20, 10.15, "DO PLANETA,"],
+  [10.15, 10.85, "GANHANDO MENOS APENAS"],
+  [10.85, 11.70, "QUE MESSI"],
+  [11.70, 12.66, "E CRISTIANO RONALDO."],
+  [12.96, 13.65, "PARA ISSO,"],
+  [13.65, 14.50, "TROCOU O BRASIL"],
+  [14.50, "gap:g1", "PELA CHINA."],
+  [122.18, 122.75, "BAIXINHO,"],
+  [122.75, 123.75, "COM MENOS DE"],
+  [123.75, 124.50, "1,70 M,"],
+  [124.50, 126.25, "CERCA DE 58 QUILOS,"],
+  [126.25, 127.45, "ERA O TIPO DE JOGADOR"],
+  [127.45, 128.25, "QUE PARECIA FRÁGIL"],
+  [128.25, 129.00, "ATÉ A BOLA CHEGAR"],
+  [129.00, 129.50, "NO PÉ DELE."],
+  [170.34, 171.20, "ANTES DE EMBARCAR,"],
+  [171.20, 172.30, "CONCA FOI APLAUDIDO"],
+  [172.30, 173.00, "PELA TORCIDA"],
+  [173.00, 173.85, "NO ENGENHÃO,"],
+  [173.85, 174.35, "QUE PEDIA"],
+  [174.35, "gap:g3", "PARA ELE FICAR."],
+  [25.60, 26.45, "E O QUE ACONTECEU"],
+  [26.45, 26.95, "COM ELE"],
+  [26.95, "gap:hold", "DEPOIS DA CHINA..."]
+ ]
+}

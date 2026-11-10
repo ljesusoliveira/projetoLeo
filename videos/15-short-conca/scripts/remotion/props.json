@@ -1,0 +1,42 @@
+{
+ "n": 952,
+ "fps": 30,
+ "bandY": 440,
+ "bandH": 1060,
+ "endTitle": [
+  "CONCA: SÓ GANHAVA",
+  "MENOS QUE MESSI E",
+  "CRISTIANO RONALDO"
+ ],
+ "marks": {
+  "ranking": {
+   "messi": 105,
+   "cr": 117
+  },
+  "china": {
+   "brasil": 8,
+   "china": 23
+  },
+  "medidas": {
+   "altura": 0,
+   "peso": 45
+  },
+  "end": {}
+ },
+ "ranking": [
+  236,
+  377
+ ],
+ "china": [
+  411,
+  457
+ ],
+ "medidas": [
+  488,
+  579
+ ],
+ "end": [
+  898,
+  952
+ ]
+}
