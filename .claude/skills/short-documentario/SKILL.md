@@ -68,6 +68,16 @@ Varie as transições ao longo do Short (não repita a mesma em todo corte) e nu
 - Se o usuário mandar música: deixe baixa (por volta de −20 dB abaixo da voz), abaixando automaticamente quando a narração fala e subindo um pouco nas pausas e na tela final.
 - Vídeo SEM narração (compilados, tops, rankings): o usuário quer uma batida original para não ficar sem som. Crie a batida do zero (sintetizada nota por nota, sem amostras de terceiros, então sem direito autoral), com seções que acompanham a edição (gancho, contagem, clímax, suspense, final), cortes sincronizados com a batida e volume em −14 LUFS. Base: `videos/12-short-top10-centroavantes/scripts/musica.py`. Garanta médios (150 Hz a 5 kHz) para a batida aparecer em alto-falante de celular, não só grave.
 
+## PREFERÊNCIAS QUE O USUÁRIO JÁ PASSOU (valem sempre)
+- O Short é uma PONTE para o vídeo longo: gancho no primeiro segundo, suspense no final, nunca revelar o desfecho e fechar com "VÍDEO COMPLETO NO CANAL", INSCREVA-SE e o vídeo relacionado.
+- Nunca cortar no meio de uma fala, de uma piada ou de um lance. Em vídeos de entrevistas (sem narração), cada entrevista entra INTEIRA, cortada só onde o próprio vídeo longo troca de entrevista ou na pausa antes; depois de pronto, transcrever de novo o áudio do Short para conferir.
+- Lances: mostrar o lance completo (a jogada, o momento e a reação).
+- Áudio original sempre; não trocar a música do usuário. Sem apito ou efeito que ele não pediu.
+- Duração: a que o usuário pedir (normalmente até 35 s; compilados e tops, 55 a 60 s).
+- Se o usuário disser que vai dormir ou sair, ou que não precisa aprovar, seguir direto do plano ao Short pronto e entregar o link.
+- O release do GitHub precisa estar PUBLICADO ("Publish release"); rascunho (draft) não dá para baixar. Se estiver em rascunho, avisar e agendar uma verificação.
+- Se a primeira versão não for distribuída pelo YouTube, fazer uma versão realmente diferente (outro gancho, outros trechos e imagens, outro visual e outra duração).
+
 ## FLUXO DE TRABALHO
 1. Antes de renderizar, me mostre o PLANO DE CORTE: uma tabela com a ordem dos trechos, a minutagem de origem no vídeo longo, a frase dita, os textos na tela e os efeitos de cada trecho.
 2. Espere a minha aprovação.
