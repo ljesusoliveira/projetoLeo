@@ -1,0 +1,35 @@
+{
+ "n": 1024,
+ "fps": 30,
+ "bandY": 440,
+ "bandH": 1060,
+ "endTitle": [
+  "CARLOS ALBERTO TORRES:",
+  "O CAPITÃO DO TRI QUE",
+  "SÓ JOGOU UMA COPA"
+ ],
+ "marks": {
+  "umacopa": {
+   "stamp": 4
+  },
+  "lista": {
+   "lista": 33,
+   "n44": 64,
+   "fora": 120,
+   "n22": 135
+  },
+  "end": {}
+ },
+ "umacopa": [
+  350,
+  393
+ ],
+ "lista": [
+  514,
+  691
+ ],
+ "end": [
+  970,
+  1024
+ ]
+}
