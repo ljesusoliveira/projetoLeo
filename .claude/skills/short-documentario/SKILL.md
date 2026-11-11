@@ -72,6 +72,7 @@ Varie as transições ao longo do Short (não repita a mesma em todo corte) e nu
 - O Short é uma PONTE para o vídeo longo: gancho no primeiro segundo, suspense no final, nunca revelar o desfecho e fechar com "VÍDEO COMPLETO NO CANAL", INSCREVA-SE e o vídeo relacionado.
 - Nunca cortar no meio de uma fala, de uma piada ou de um lance. Em vídeos de entrevistas (sem narração), cada entrevista entra INTEIRA, cortada só onde o próprio vídeo longo troca de entrevista ou na pausa antes; depois de pronto, transcrever de novo o áudio do Short para conferir.
 - Lances: mostrar o lance completo (a jogada, o momento e a reação).
+- SEM PAUSAS ENTRE AS FRASES: a narração tem que ser contínua. Não inserir silêncio ("respiro", gap) entre os trechos e aparar o silêncio das pontas de cada trecho, deixando só a respiração natural (uns 0,1 s); a próxima frase entra logo em seguida, com a troca de imagem e a transição em cima do corte. No Short do Conca ficaram 5 pausas de 0,3 a 0,4 s e o usuário reclamou que fica ruim. Depois de pronto, medir o áudio: nenhum silêncio acima de ~0,15 s dentro da narração (a tela final pode ter o seu silêncio próprio, mas a última frase emenda direto nela).
 - Áudio original sempre; não trocar a música do usuário. Sem apito ou efeito que ele não pediu.
 - Duração: a que o usuário pedir (normalmente até 35 s; compilados e tops, 55 a 60 s).
 - Se o usuário disser que vai dormir ou sair, ou que não precisa aprovar, seguir direto do plano ao Short pronto e entregar o link.
