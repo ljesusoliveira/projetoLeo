@@ -1,0 +1,80 @@
+{
+ "fps": 30,
+ "note": "Roteiro do Short do Gaúcho. 'audio': trechos da narração original (s no vídeo longo), em ordem e emendados SEM pausa entre eles (só a tela final tem silêncio); quando a própria narração tem uma pausa longa no meio, o trecho é dividido em dois para apará-la. 'video': cada imagem começa onde a anterior termina e vai até 'cut' (instante da NARRAÇÃO, em s do vídeo longo, ou 'gap:<id>' = fim da pausa). 'src' = de onde vem a imagem; 'freeze' = segura o último quadro da imagem 'of'. cx = centro horizontal do recorte (0 a 1; lista = acompanha, com tempos do vídeo longo); y0/y1 = faixa vertical usada (corta textos, botões e a marca d'água das imagens de TV do vídeo longo); x0/x1 = limites da foto quando o fundo em volta não é preto puro. Transições: whip = chicote na entrada; punch = punch-in de 8%; flash = flash com tremida; leak = brilho quente; reveal = entra desfocado e ganha foco; fade_in/fade_out = escurecimento; dim = escurece a imagem a partir do instante (para o gráfico); look sepia = monocromático. 'remotion': elementos animados feitos no Remotion (pênaltis defendidos e encerramento); 'marks' = instantes internos de cada um. Textos também usam o tempo da narração.",
+ "title": ["DO PALMEIRAS AO FLAMENGO:", "A VINGANÇA MAIS IMPROVÁVEL DO FUTEBOL?"],
+ "end_title": ["DO PALMEIRAS AO FLAMENGO:", "A VINGANÇA MAIS IMPROVÁVEL", "DO FUTEBOL?"],
+ "audio": [
+  {"id": "a1", "src": [0.08, 9.87]},
+  {"id": "a2", "src": [109.58, 115.44]},
+  {"id": "a2b", "src": [115.66, 120.38]},
+  {"id": "a3", "src": [124.27, 127.05]},
+  {"id": "a3b", "src": [127.14, 131.93]},
+  {"id": "a4", "src": [9.98, 14.72]},
+  {"id": "fim", "gap": 1.8}
+ ],
+ "chapters": [0.08, 109.58, 124.27, 9.98, "gap:fim-start"],
+ "video": [
+  {"id": "centroavante", "src": 59.80, "cut": 1.45, "y0": 0, "y1": 1080, "cx": 0.45, "zoom": [1.0, 1.08], "zoom_y": 0.35, "punch": [0.60]},
+  {"id": "goleiro", "src": 84.50, "cut": 4.05, "y0": 0, "y1": 920, "cx": 0.40, "zoom": [1.0, 1.06], "zoom_y": 0.4, "whip": true, "punch": [3.40]},
+  {"id": "noite", "src": 135.65, "cut": 6.30, "y0": 0, "y1": 920, "cx": 0.42, "zoom": [1.22, 1.34], "zoom_y": 0.5, "reveal": true},
+  {"id": "penalti", "src": 6.45, "cut": 8.70, "y0": 190, "y1": 1080, "cx": [[6.45, 0.76], [6.95, 0.76], [7.25, 0.68], [7.6, 0.56], [8.85, 0.55]], "zoom": [1.0, 1.04], "whip": true, "flash": [7.35]},
+  {"id": "ajoelhado", "src": 9.65, "cut": 9.87, "y0": 0, "y1": 920, "cx": 0.5, "zoom": [1.0, 1.06], "zoom_y": 0.5, "leak": [8.75]},
+  {"id": "palmeiras", "src": 141.45, "cut": 111.41, "y0": 0, "y1": 920, "cx": 0.45, "zoom": [1.0, 1.08], "zoom_y": 0.4, "whip": true},
+  {"id": "sentado", "src": 98.35, "cut": 112.62, "y0": 0, "y1": 920, "cx": 0.55, "zoom": [1.0, 1.06], "zoom_y": 0.4, "punch": [112.26]},
+  {"id": "flamengo", "src": 61.58, "cut": 113.95, "y0": 0, "y1": 920, "cx": 0.5, "zoom": [1.0, 1.06], "zoom_y": 0.4, "whip": true},
+  {"id": "atacante", "src": 73.56, "cut": 115.44, "y0": 0, "y1": 920, "cx": 0.5, "zoom": [1.0, 1.06], "zoom_y": 0.5},
+  {"id": "entrevista", "src": 100.00, "cut": 120.38, "y0": 0, "y1": 920, "cx": 0.42, "zoom": [1.0, 1.08], "zoom_y": 0.35, "reveal": true, "leak": [118.35], "punch": [119.60]},
+  {"id": "defesa", "src": 123.25, "cut": 127.05, "y0": 150, "y1": 920, "cx": 0.66, "zoom": [1.0, 1.04], "zoom_y": 0.5, "whip": true, "flash": [125.70]},
+  {"id": "festa", "src": 146.30, "cut": 128.80, "y0": 0, "y1": 920, "cx": [[146.3, 0.55], [147.9, 0.45]], "zoom": [1.0, 1.06], "zoom_y": 0.4, "dim": 127.14},
+  {"id": "time", "src": 149.30, "cut": 131.93, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.06], "zoom_y": 0.4, "look": "sepia", "dim": 128.80},
+  {"id": "aceno", "src": 25.20, "cut": 12.30, "y0": 0, "y1": 1080, "cx": 0.45, "zoom": [1.0, 1.08], "zoom_y": 0.35, "whip": true, "color_in": true},
+  {"id": "rubro-negros", "src": 158.60, "cut": 14.72, "y0": 0, "y1": 1080, "cx": 0.5, "zoom": [1.0, 1.10], "zoom_y": 0.4, "leak": [13.15]},
+  {"id": "final", "freeze": true, "of": "rubro-negros", "cut": "gap:fim", "endcard": true}
+ ],
+ "stamps": [
+  {"text": "1990", "from": 10.05, "to": 12.30}
+ ],
+ "bigtext": [],
+ "lower": [
+  {"text": "MARACANÃ • 17/11/1988", "from": 4.15, "to": 6.25}
+ ],
+ "remotion": {
+  "defesas": {"from": 124.27, "to": 131.93, "marks": {"zinho": 125.35, "aldair": 126.45, "dois": 127.20, "campeoes": 127.65}},
+  "end": {"from": "gap:fim-start", "to": "gap:fim"}
+ },
+ "highlight": ["GAÚCHO", "CENTROAVANTE", "GOLEIRO", "MARACANÃ", "LUVAS", "DOIS", "PÊNALTIS", "FLAMENGO", "REVELOU", "IMPROVISADO", "COBRADORES", "PEGAR", "PALMEIRAS", "GANHAR", "ZINHO", "ALDAIR", "CAMPEÕES", "MUNDO", "1994", "ÍDOLO", "RUBRO-NEGRA"],
+ "captions": [
+  [0.08, 1.45, "GAÚCHO ERA CENTROAVANTE,"],
+  [1.45, 2.58, "MAS ENTROU PARA A HISTÓRIA"],
+  [2.58, 3.34, "DO FUTEBOL BRASILEIRO"],
+  [3.34, 4.05, "COMO GOLEIRO."],
+  [4.05, 5.10, "NUMA NOITE NO MARACANÃ,"],
+  [5.10, 6.30, "ELE CALÇOU AS LUVAS,"],
+  [6.30, 7.70, "DEFENDEU DOIS PÊNALTIS"],
+  [7.70, 8.70, "E DERRUBOU O FLAMENGO,"],
+  [8.70, 9.87, "O CLUBE QUE O REVELOU."],
+  [109.58, 111.60, "UM CENTROAVANTE IMPROVISADO"],
+  [111.60, 112.22, "DEBAIXO DAS TRAVES"],
+  [112.22, 112.64, "DO MARACANÃ,"],
+  [112.64, 113.71, "DIANTE DE COBRADORES"],
+  [113.71, 114.30, "QUE ESTAVAM ACOSTUMADOS"],
+  [114.30, 115.44, "A DECIDIR JOGOS."],
+  [115.66, 116.38, "MESMO ASSIM,"],
+  [116.38, 117.46, "ANTES DAS COBRANÇAS,"],
+  [117.46, 118.29, "GAÚCHO AVISOU"],
+  [118.29, 118.99, "QUE IA PEGAR"],
+  [118.99, 120.38, "E QUE O PALMEIRAS IA GANHAR."],
+  [124.27, 124.90, "DEFENDEU"],
+  [124.90, 125.84, "AS COBRANÇAS DE ZINHO"],
+  [125.84, 127.05, "E TAMBÉM A DE ALDAIR."],
+  [127.14, 127.62, "OS DOIS SERIAM"],
+  [127.62, 128.80, "CAMPEÕES DO MUNDO"],
+  [128.80, 130.10, "PELA SELEÇÃO BRASILEIRA"],
+  [130.10, 131.93, "NA COPA DE 1994."],
+  [9.98, 11.13, "E POUCO MAIS DE UM ANO DEPOIS,"],
+  [11.13, 12.30, "VOLTOU AO FLAMENGO"],
+  [12.30, 13.11, "PARA VIRAR ÍDOLO"],
+  [13.11, 13.61, "JUSTAMENTE"],
+  [13.61, 14.72, "DA TORCIDA RUBRO-NEGRA."]
+ ]
+}

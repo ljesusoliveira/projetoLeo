@@ -22,6 +22,7 @@ Cada vídeo tem a sua pasta dentro de `videos/`. Lá dentro ficam o vídeo pront
 | [`videos/14-short-viola`](videos/14-short-viola) | Short-gancho para o vídeo longo "Viola: Provocou o Palmeiras e Depois Vestiu a Camisa do Rival" | Vertical 9:16, 0:35 |
 | [`videos/15-short-conca`](videos/15-short-conca) | Short-gancho para o vídeo longo "Conca: Só Ganhava Menos Que Messi e Cristiano Ronaldo" | Vertical 9:16, 0:32 |
 | [`videos/16-short-carlos-alberto`](videos/16-short-carlos-alberto) | Short-gancho para o vídeo longo "Carlos Alberto Torres: O Capitão do Tri Que Só Jogou Uma Copa" | Vertical 9:16, 0:34 |
+| [`videos/17-short-gaucho`](videos/17-short-gaucho) | Short-gancho para o vídeo longo "Do Palmeiras ao Flamengo: A Vingança Mais Improvável do Futebol?" (Gaúcho) | Vertical 9:16, 0:34 |
 
 ## Como baixar um vídeo
 

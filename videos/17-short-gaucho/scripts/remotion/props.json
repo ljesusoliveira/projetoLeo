@@ -1,0 +1,28 @@
+{
+ "n": 1035,
+ "fps": 30,
+ "bandY": 440,
+ "bandH": 1060,
+ "endTitle": [
+  "DO PALMEIRAS AO FLAMENGO:",
+  "A VINGANÇA MAIS IMPROVÁVEL",
+  "DO FUTEBOL?"
+ ],
+ "marks": {
+  "defesas": {
+   "zinho": 32,
+   "aldair": 65,
+   "dois": 85,
+   "campeoes": 98
+  },
+  "end": {}
+ },
+ "defesas": [
+  612,
+  839
+ ],
+ "end": [
+  981,
+  1035
+ ]
+}
