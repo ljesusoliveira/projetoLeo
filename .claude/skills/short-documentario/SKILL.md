@@ -75,13 +75,13 @@ Varie as transições ao longo do Short (não repita a mesma em todo corte) e nu
 - SEM PAUSAS ENTRE AS FRASES: a narração tem que ser contínua. Não inserir silêncio ("respiro", gap) entre os trechos e aparar o silêncio das pontas de cada trecho, deixando só a respiração natural (uns 0,1 s); a próxima frase entra logo em seguida, com a troca de imagem e a transição em cima do corte. No Short do Conca ficaram 5 pausas de 0,3 a 0,4 s e o usuário reclamou que fica ruim. Depois de pronto, medir o áudio: nenhum silêncio acima de ~0,15 s dentro da narração (a tela final pode ter o seu silêncio próprio, mas a última frase emenda direto nela).
 - Áudio original sempre; não trocar a música do usuário. Sem apito ou efeito que ele não pediu.
 - Duração: a que o usuário pedir (normalmente até 35 s; compilados e tops, 55 a 60 s).
-- Se o usuário disser que vai dormir ou sair, ou que não precisa aprovar, seguir direto do plano ao Short pronto e entregar o link.
+- NÃO ESPERAR APROVAÇÃO: quando o usuário manda o vídeo longo, fazer o Short direto, do começo ao fim, e entregar o link pronto, sem mandar plano de corte para aprovar (no Short do Gaúcho o usuário foi dormir, acordou e o Short não estava feito porque eu esperava o OK dele). Só mandar plano antes se ele pedir isso explicitamente. O plano de corte vai junto com a entrega, no README e no resumo.
 - O release do GitHub precisa estar PUBLICADO ("Publish release"); rascunho (draft) não dá para baixar. Se estiver em rascunho, avisar e agendar uma verificação.
 - Se a primeira versão não for distribuída pelo YouTube, fazer uma versão realmente diferente (outro gancho, outros trechos e imagens, outro visual e outra duração).
 
 ## FLUXO DE TRABALHO
-1. Antes de renderizar, me mostre o PLANO DE CORTE: uma tabela com a ordem dos trechos, a minutagem de origem no vídeo longo, a frase dita, os textos na tela e os efeitos de cada trecho.
-2. Espere a minha aprovação.
+1. Monte o PLANO DE CORTE (ordem dos trechos, minutagem de origem no vídeo longo, frase dita, textos na tela e efeitos de cada trecho). Ele vai no README e no resumo da entrega.
+2. NÃO espere aprovação: siga direto (só pare para aprovar se o usuário pedir).
 3. Renderize o Short.
 4. Antes de entregar, confira e me diga o resultado:
    - Duração entre 30 e 35 segundos?
